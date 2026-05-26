@@ -8,10 +8,19 @@ Project root: `C:\Desenvolvimento\DelphiSGACodex`
 - Work in `C:\Desenvolvimento\DelphiSGACodex` by default.
 - Do not edit `C:\Desenvolvimento\DelphiSGA` unless the user explicitly
   approves that specific write. Treat it as read-only reference.
+- Shared memory lives in `C:\Desenvolvimento\CodexMemoria` and is versioned
+  at `https://github.com/brunosilvadelphionline-png/CodexMemoria`.
+- Before implementation tasks that change source code, pull the shared memory
+  repository first with
+  `git -C C:\Desenvolvimento\CodexMemoria pull --ff-only origin main`, then
+  read the relevant memory files before editing code.
+- When any file under `C:\Desenvolvimento\CodexMemoria` is changed, commit
+  and push that repository immediately so other developers stay synchronized.
 - For source-code tasks, run `git status --short` first. If clean, use
   `master` and pull `origin master`; if dirty, do not switch, pull, overwrite,
   or revert without asking.
-- For memory/configuration cleanup or non-code conversation tasks, do not pull.
+- For memory/configuration cleanup or non-code conversation tasks, do not pull
+  the source-code repository.
 - User-facing Portuguese text must use accents and natural spelling. Internal
   memory notes should stay ASCII when practical.
 - Classify requests:

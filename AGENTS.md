@@ -13,6 +13,27 @@ equivalent file under `C:\Desenvolvimento\DelphiSGACodex` for code changes.
 At the start of future sessions in this repo, read `CODEX_PROJECT_MEMORY.md`
 before making changes. Use it as the local project memory.
 
+## Shared memory repository
+
+The shared memory lives in `C:\Desenvolvimento\CodexMemoria` and is
+versioned at:
+
+`https://github.com/brunosilvadelphionline-png/CodexMemoria`
+
+Before any implementation-mode task that changes source code in
+`C:\Desenvolvimento\DelphiSGACodex`, pull the shared memory repository first:
+
+`git -C C:\Desenvolvimento\CodexMemoria pull --ff-only origin main`
+
+Then read the relevant memory files from `C:\Desenvolvimento\CodexMemoria`
+before editing code.
+
+Whenever any file under `C:\Desenvolvimento\CodexMemoria` is changed, commit
+and push that repository immediately so the shared memory stays synchronized
+with the other developers. If the memory repository has unexpected local
+changes or cannot fast-forward, do not overwrite anything; inspect the status
+and ask the user when the safe next step is unclear.
+
 For source-code-related project tasks only, update `master` before working.
 This applies when the user asks what the project/code does, asks for code
 analysis/debugging, or requests a project change. For conversations, text
