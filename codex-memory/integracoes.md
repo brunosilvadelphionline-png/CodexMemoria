@@ -30,3 +30,6 @@ external API integrations, and shared service signatures.
   Pamcard should share this rule.
 - For Pamcard `InsertFreightContract`, do not send
   `viagem.pedagio.cartao.numero`; v9.2 ignores/removes this field.
+- Pamcard Roadcard no longer accepts card as toll payment method. Do not send
+  favorecido `meio.pagamento` as CARTAO or any `cartao.numero` fields for toll;
+  use TAG through `viagem.pedagio.solucao.id = 6` and tag issuer fields.
