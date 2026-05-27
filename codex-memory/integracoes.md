@@ -16,7 +16,8 @@ external API integrations, and shared service signatures.
 ## Transport / External Mapping
 
 - Transportador do pedido high-performance marker is
-  `TRANSPORTADORPEDIDO.TRPALTODESEMP`; MDFe and e-Frete CIOT map from it.
+  `TRANSPORTADORPEDIDO.TRPALTODESEMP`; MDFe, e-Frete CIOT, and
+  Pamcard Roadcard map from it through shared CIOT helpers.
 
 ## CIOT / Pamcard Roadcard
 
