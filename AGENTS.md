@@ -79,33 +79,3 @@ Classify the user's request before acting and use the matching work mode:
 If the intent is ambiguous, prefer question / analysis mode and keep the
 response concise. Switch to implementation mode only when the user clearly asks
 for a code or configuration change.
-
-## Effort reporting
-
-For every source-code-related task, including analysis, behavior/history
-questions, debugging, review, and implementation, include an estimated effort
-summary in the final response.
-
-Do not claim exact token usage, exact plan consumption, or exact quota usage.
-Those values are not visible from this environment. Report only observable or
-reasonable estimates that can help the user build an Excel history for plan
-selection.
-
-Use this compact format when possible:
-
-`Metrica da tarefa: tempo aproximado X min; tipo <analise|implementacao|debug|review|triagem>; intensidade <baixa|media|alta>; ferramentas N comandos/buscas; arquivos lidos N; arquivos alterados N; validacao <sim/nao>; consumo real do plano: nao mensuravel pelo Codex.`
-
-Suggested Excel columns for the user:
-
-- Data
-- Tipo da tarefa
-- Resumo
-- Tempo aproximado (min)
-- Intensidade
-- Comandos/buscas
-- Arquivos lidos
-- Arquivos alterados
-- Validacao executada
-- Resultado
-- Consumo real observado pelo usuario
-- Observacoes

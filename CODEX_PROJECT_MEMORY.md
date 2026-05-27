@@ -28,8 +28,6 @@ Project root: `C:\Desenvolvimento\DelphiSGACodex`
   - implementation: inspect, edit, and validate.
   - support/triage: draft responses, estimates, or next steps; no code edits
     unless explicitly requested.
-- For source-code tasks, final responses should include the compact effort
-  metric requested by the project instructions.
 
 ## Subject Memories
 
