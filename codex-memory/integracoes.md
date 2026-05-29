@@ -28,6 +28,10 @@ external API integrations, and shared service signatures.
 - Payment model uses `DefineIndicadorPagamentoCiot`: one parcel with total
   liquid equal to total means a vista, otherwise a prazo. E-Frete V2 and
   Pamcard should share this rule.
+- E-Frete vehicle registration in `SgaExp\SgaExpEFrete.pas` splits the main
+  plate axle count only when the main vehicle has more than 4 axles: use
+  document reboque plates first, otherwise `VEICULO.VEICPLACA1..3`, and
+  subtract registered reboque `VEICNUMEIXOS` values from the main plate.
 - For Pamcard `InsertFreightContract`, do not send
   `viagem.pedagio.cartao.numero`; v9.2 ignores/removes this field.
 - Pamcard Roadcard no longer accepts card as toll payment method. Do not send
